@@ -10,6 +10,10 @@ class VirtualPet:
         self.name = name
         self.energy = energy
         self.hunger = hunger
+        self.play(energy,hunger)
+        self.feed(hunger)
+        self.sleep(energy)
+        
 
     def play(self):
         self.energy-=2
