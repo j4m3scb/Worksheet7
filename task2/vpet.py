@@ -7,9 +7,9 @@
 
 class VirtualPet:
     def __init__(self,name,energy,hunger):
-        self.Name = name
-        self.Energy = energy
-        self.Hunger = hunger
+        self.name = name
+        self.energy = 10
+        self.hunger = 0
         self.play(energy,hunger)
         self.feed(hunger)
         self.sleep(energy)
