@@ -10,9 +10,6 @@ class VirtualPet:
         self.name = name
         self.energy = energy
         self.hunger = hunger
-        self.play(energy,hunger)
-        self.feed(hunger)
-        self.sleep(energy)
         
 
     def play(self):
@@ -22,13 +19,13 @@ class VirtualPet:
             print("Too tired to play")
     
     def feed(self):
-        self.Hunger = max(0, self.Hunger - 3)
+        self.hunger = max(0, self.hunger - 3)
 
     def sleep(self):
-        self.Energy += 10
+        self.energy += 10
 
     def __str__(self):
-        return (self.Name + " with " + str(self.Energy) + " energy points and " + str(self.Hunger) + " hunger level")
+        return (self.name + " with " + str(self.energy) + " energy points and " + str(self.hunger) + " hunger level")
 
 
 
