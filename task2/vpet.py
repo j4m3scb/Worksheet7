@@ -7,28 +7,28 @@
 
 class VirtualPet:
     def __init__(self,name,energy,hunger):
-        self.name = name
-        self.energy = energy
-        self.hunger = hunger
+        self.Name = name
+        self.Energy = energy
+        self.Hunger = hunger
         self.play(energy,hunger)
         self.feed(hunger)
         self.sleep(energy)
         
 
     def play(self):
-        self.energy-=2
-        self.hunger+=2
-        if self.energy<2:
+        self.Energy-=2
+        self.Hunger+=2
+        if self.Energy<2:
             print("Too tired to play")
     
     def feed(self):
-        self.hunger = max(0, self.hunger - 3)
+        self.Hunger = max(0, self.Hunger - 3)
 
     def sleep(self):
-        self.energy += 10
+        self.Energy += 10
 
     def __str__(self):
-        return (self.name + " with " + str(self.energy) + " energy points and " + str(self.hunger) + " hunger level")
+        return (self.Name + " with " + str(self.Energy) + " energy points and " + str(self.Hunger) + " hunger level")
 
 
 
