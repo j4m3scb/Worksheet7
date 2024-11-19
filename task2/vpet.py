@@ -13,7 +13,7 @@ class VirtualPet:
 
     def play(self):
         self.energy-=2
-        hunger+=2
+        self.hunger+=2
         if self.energy<2:
             print("Too tired to play")
     
